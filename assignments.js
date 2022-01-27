@@ -216,19 +216,32 @@ console.log(describePoland);
 // the same populations)
 /*
 function percentageOfWorld1(population) {
-  return (population/7900) * 100;
+  return (population/7900) * 100 + ' percent of the world';
 };
 // console.log(percentageOfWorld1(330), 'U.S.A.')
 // console.log(percentageOfWorld1(1100), 'India')
 // console.log(percentageOfWorld1(9), 'Iraq')
 
-const percentageOfWorld2 = function percentageOfWorld1(population) {
-  return (population/7900) * 100;
-};
+// const percentageOfWorld2 = function percentageOfWorld1(population) {
+//   return (population/7900) * 100;
+// };
 
-const usa = percentageOfWorld1(330) + ' U.S.A.';
-const india = percentageOfWorld1(1100) + ' India';
-const iraq = percentageOfWorld1(9) + ' Iraq'; 
+const usa = percentageOfWorld1(330) + ' percent of the world';
+const india = percentageOfWorld1(1100) + ' percent of the world';
+const iraq = percentageOfWorld1(9) + ' percent of the world'; 
 
-console.log(usa, india, iraq)
+// console.log(usa, india, iraq)
+
+
+// LECTURE: Functions Calling Other Functions
+// 1. Createafunctioncalled'describePopulation'.Usethefunctiontypeyou like the most. This function takes in two arguments: 'country' and 'population', and returns a string like this: 'China has 1441 million people, which is about 18.2% of the world.'
+// 2. Tocalculatethepercentage,'describePopulation'callthe 'percentageOfWorld1' you created earlier
+// 3. Call'describePopulation'withdatafor3countriesofyourchoice
+
+function describePopulation(country, population) {
+  const percentageOfCountry = percentageOfWorld1(population);
+  const description = `${country} has ${population} million people, which is about ${percentageOfCountry}`;
+  return description; 
+}
+console.log(describePopulation("USA", 330))
 */

@@ -90,7 +90,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1986, 'Mike'));
 */
-
+/*
 function cutFruitPieces(fruit) {
   return fruit * 4;
 }
@@ -105,3 +105,4 @@ const fruitProcessor = function (apples, oranges) {
 }                     
 console.log(fruitProcessor(2,3));
 // the 2 and 3 in fruit processor on ~106 link to ~97 apples and oranges, which link to apples in apple in cutpieces, replacing the fruit placeholder in cutpieced above, then being multiplied by 4, storing 8 in applePieces, to be rendered in juice. 
+*/
